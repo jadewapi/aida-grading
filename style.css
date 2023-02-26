@@ -15,6 +15,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+}
+
+.categoriesContainer > * {
+    height: 50%;
+    background-color: rgb(25, 193, 193);
 }
 
 .assignmentContainer {
@@ -73,7 +79,7 @@ body {
     font-size: 10rem;
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 40%;
     transform: translate(-50%, -50%);
     opacity: 10%;
     z-index: 1;
