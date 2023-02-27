@@ -7,22 +7,58 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&family=Mulish:wght@600&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@600&family=Righteous&display=swap" rel="stylesheet">
     <title>Aida Grading</title>
 </head>
 <body>
-    <div class="assignments">
-        <div class="categoriesContainer">
-            <div class="assignmentContainer">
-                <div class="entry">1</div>
-                <div class="assignmentEntryContainer">
-                    <p class="gradeLetter">A+</p>
-                    <p class="assignmentName">Assignment Name</p>
-                    <p class="assignmentDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <header>
+        <section class="logo">
+            <p>AIDA</p>
+        </section>
+        <nav>
+            <ul class="form">
+                <form>
+                    <input type="text" class="login">
+                    <input type="text" class="password">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-login" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M14 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2"></path>
+                        <path d="M20 12h-13l3 -3m0 6l-3 -3"></path>
+                    </svg>
+                </form>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <aside>
+            <ul class="allStudents">
+                <li class="studentinfo">
+                    <p class="studentFirstName">Jade</p>
+                    <p class="studentLastName">Pineda</p>
+                </li>
+            </ul>
+        </aside>
+        <article class="mainInterface">
+            <section class="top">
+                <div class="studentShow">
+                    <p class="topStudentFirstName">Jade</p>
+                    <p class="topStudentLastName">Pineda</p>
                 </div>
-                <div class="grade">90</div>
-            </div>
-        </div>
-    </div>
-</body>
+                <div class="studentAverage"> 6</div>
+            </section>
+            <ul class="gradesUl">
+                <p class="gradeEntry">1</p>
+                <section class="assignmentInfo">
+                    <p class="assignmentName">Assignment Name</p>
+                    <p class="assignmentDescription">Assignment Description</p>
+                    <p class="assignmentCategory">Classwork</p>
+                </section>
+            </ul>
+            <button class="update">Update</button>
+        </article>
+    </main>
+</body> 
 </html>

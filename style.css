@@ -5,83 +5,14 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: rgb(181, 139, 108);
-    height: 100vh;
-}
-
-.assignments {
+    font-family: 'Mulish', sans-serif;
+    background-color: rgb(111, 117, 111);
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
 }
 
-.categoriesContainer > * {
-    height: 50%;
-    background-color: rgb(25, 193, 193);
+header {
+    display: block;
 }
-
-.assignmentContainer {
-    display: flex;
-    height: 8rem;
-}
-
-.entry, .grade {
-    background-color: rgb(44, 159, 80);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 4rem;
-    height: 50%;
-    font-size: 2rem;
-}
-
-.entry {
-    margin-right: 1rem;
-}
-
-.grade {
-    width: 6rem;
-    margin-left: 1rem;
-}
-
-.assignmentEntryContainer {
-    width: 25rem;
-    height: 100%;
-    background-color: rgb(236, 255, 243);
-    position: relative;
-}
-
-.assignmentEntryContainer > * {
-    padding: 0 1rem;
-}
-
-.assignmentName {
-    font-weight: bold;
-    font-size: 2rem;
-    border-bottom: 2px solid rgb(128, 128, 128);
-}
-
-.assignmentDescription {
-    padding-top: 1rem;
-    font-size: 1rem;
-}
-
-.gradeLetter, .assignmentName {
-    /* so the text on the container "AssignmentEntryContainer" will be on top of the letterGrade */
-    z-index: 2;
-}
-
-.gradeLetter {
-    font-weight: bold;
-    font-size: 10rem;
-    position: absolute;
-    top: 50%;
-    left: 40%;
-    transform: translate(-50%, -50%);
-    opacity: 10%;
-    z-index: 1;
-}
-
