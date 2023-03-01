@@ -32,6 +32,12 @@ body {
     width: 97%;
 }
 
+body > *:not(:last-child) {
+    margin-bottom: 2rem;
+}
+
+/* header */
+/* //////////////////////////////////////// */
 header {
     width: 100%;
     height: 9rem;
@@ -39,7 +45,6 @@ header {
     display: flex;
 }
 
-/* //////////////////////////////////////// */
 /* .logo, .jadeLogoContainer, form */
 header > * {
     height: 100%;
@@ -87,3 +92,20 @@ input[class="userName"], input[class="pin"] {
 }
 /* ---------------- */
 /* ////////////////////////////////////////// */
+/* end header */
+
+
+/* aside */
+aside {
+    height: 5rem;
+    background-color: rgb(17, 220, 20);
+}
+/* end aside */
+
+
+/* main */
+main {
+    height: 61rem;
+    background-color: rgb(45, 209, 154);
+}
+/* end main */
