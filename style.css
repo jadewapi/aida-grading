@@ -208,24 +208,7 @@ main {
 }
 
 .credentials {
-    width: 20%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.userName {
-    font-size: 3rem;
-    z-index: 2;
-}
-
-.userPin {
-    font-size: 5rem;
-    z-index: 1;
-    color: black;
-    opacity: 40%;
-    margin-top: -2rem;
+    width:
 }
 
 .generalName {
@@ -245,7 +228,6 @@ main {
 }
 
 .generalFirstName {
-    padding: 0 1rem;
     font-size: 7rem;
     width: 90%;
     text-align: center;
