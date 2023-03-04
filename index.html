@@ -12,119 +12,90 @@
 </head>
 <body>
     <header>
-        <article class="headerContainer">
-            <section class="logo">
-                <img src="images/aida.png" alt="AIDA logo" class="aida">
-                <p class="logoText">AIDA</p>
-            </section>
-            <img src="images/jadelogo.png" alt="" class="jadeLogo">
-            <form>
-                <input type="text" class="login" placeholder="username">
-                <input type="text" class="password" placeholder="pin">
-                <svg
-                    width="36"
-                    height="36"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    >
-                    <path
-                        d="M12.0519 14.8285L13.4661 16.2427L17.7088 12L13.4661 7.7574L12.0519 9.17161L13.8804 11H6.34321V13H13.8803L12.0519 14.8285Z"
-                        fill="currentColor"
-                    />
-                    <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M19.7782 19.7782C24.0739 15.4824 24.0739 8.51759 19.7782 4.22183C15.4824 -0.0739417 8.51759 -0.0739417 4.22183 4.22183C-0.0739417 8.51759 -0.0739417 15.4824 4.22183 19.7782C8.51759 24.0739 15.4824 24.0739 19.7782 19.7782ZM18.364 18.364C21.8787 14.8492 21.8787 9.15076 18.364 5.63604C14.8492 2.12132 9.15076 2.12132 5.63604 5.63604C2.12132 9.15076 2.12132 14.8492 5.63604 18.364C9.15076 21.8787 14.8492 21.8787 18.364 18.364Z"
-                        fill="currentColor"
-                    />
-                </svg>
-            </form>
-        </article>
-        <section class="categories">
-            <p>Students</p>
-            <p>Student Info</p>
-            <p></p>
-        </section>
+        <div class="logo">
+            <img src="images/aida.png" alt="AIDA logo">
+            <h1 class="aida">AIDA</h1>
+        </div>
+        <div class="jadeLogoContainer">
+            <img src="images/jadelogo.png" alt="jade pineda logo">
+        </div>
+        <form action="">
+            <input type="text" class="userName" placeholder="user name">
+            <input type="text" class="pin" placeholder="pin">
+            <label>
+                <input type="submit">
+                <svg type="submit" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" style="fill: rgb(255, 255, 255);transform: ;msFilter:;"><path d="M11.999 1.993c-5.514.001-10 4.487-10 10.001s4.486 10 10.001 10c5.513 0 9.999-4.486 10-10 0-5.514-4.486-10-10.001-10.001zM12 19.994c-4.412 0-8.001-3.589-8.001-8s3.589-8 8-8.001C16.411 3.994 20 7.583 20 11.994c-.001 4.411-3.59 8-8 8z"></path><path d="M12 10.994H8v2h4V16l4.005-4.005L12 7.991z"></path></svg>
+            </label>
+            </button>
+        </form>
     </header>
+    <aside>
+        <div class="pBorder"><p>Students</p></div>
+        <div class="pBorder"><p>Interface</p></div>
+        <div class="pBorder"><p>Menu</p></div>
+    </aside>
     <main>
-        <article class="student">
-            <ul class="allStudents">
-                <li class="studentInfo">
-                    <p class="studentFirstName">Jade</p>
-                    <p class="studentLastName">Pineda</p>
-                    <p class="studentInfoAverage">96</p>
-                </li>
-                <li class="studentInfo">
-                    <p class="studentFirstName">Jade</p>
-                    <p class="studentLastName">Pineda</p>
-                    <p class="studentInfoAverage">65</p>
-                </li>
-                <li class="studentInfo">
-                    <p class="studentFirstName">Jade</p>
-                    <p class="studentLastName">Pineda</p>
-                    <p class="studentInfoAverage">75</p>
-                </li>
-                <li class="studentInfo">
-                    <p class="studentFirstName">Jade</p>
-                    <p class="studentLastName">Pineda</p>
-                    <p class="studentInfoAverage">75</p>
-                </li>
-                <li class="studentInfo">
-                    <p class="studentFirstName">Jade</p>
-                    <p class="studentLastName">Pineda</p>
-                    <p class="studentInfoAverage">75</p>
-                </li>
-                <li class="studentInfo">
-                    <p class="studentFirstName">Jade</p>
-                    <p class="studentLastName">Pineda</p>
-                    <p class="studentInfoAverage">75</p>
-                </li>
-                <li class="studentInfo">
-                    <p class="studentFirstName">Jade</p>
-                    <p class="studentLastName">Pineda</p>
-                    <p class="studentInfoAverage">75</p>
-                </li>
-                <li class="studentInfo">
-                    <p class="studentFirstName">Jade</p>
-                    <p class="studentLastName">Pineda</p>
-                    <p class="studentInfoAverage">75</p>
-                </li>
-                <li class="studentInfo">
-                    <p class="studentFirstName">Jade</p>
-                    <p class="studentLastName">Pineda</p>
-                    <p class="studentInfoAverage">75</p>
-                </li>
-                <li class="studentInfo">
-                    <p class="studentFirstName">Jade</p>
-                    <p class="studentLastName">Pineda</p>
-                    <p class="studentInfoAverage">75</p>
-                </li>
-            </ul>
-        </article>
-        <article class="mainContainer">
-            <article class="mainInterface">
-                <section class="top">
-                    <div class="studentShow">
-                        <p class="topStudentFirstName">Jade</p>
-                        <p class="topStudentLastName">Pineda</p>
+        <ul class="students">
+            <li class="specificStudent">
+                <div class="specificFirstName">Jade</div>
+                <div class="specificLastName">Pineda</div>
+                <div class="specificAverage">96</div>
+            </li>
+            <li class="specificStudent">
+                <div class="specificFirstName">Jade</div>
+                <div class="specificLastName">Pineda</div>
+                <div class="specificAverage">96</div>
+            </li>
+            <li class="specificStudent">
+                <div class="specificFirstName">Jade</div>
+                <div class="specificLastName">Pineda</div>
+                <div class="specificAverage">96</div>
+            </li>
+            <li class="specificStudent">
+                <div class="specificFirstName">Jade</div>
+                <div class="specificLastName">Pineda</div>
+                <div class="specificAverage">96</div>
+            </li>
+            <li class="specificStudent">
+                <div class="specificFirstName">Jade</div>
+                <div class="specificLastName">Pineda</div>
+                <div class="specificAverage">96</div>
+            </li>
+        </ul>
+        <article class="interface">
+            <section class="general">
+                <div class="credentials"></div>
+                <div class="generalName">
+                    <div class="generalFirstName">Jade</div>
+                    <div class="generalLastName">Pineda</div>
+                </div>
+                <div class="generalAverage">100</div>
+            </section>
+            <section class="category">
+                <div class="categoryP"><p>Entry</p></div>
+                <div class="categoryP"><p>Assignment</p></div>
+                <div class="categoryP"><p>Grade</p></div>
+            </section>
+            <section class="allAssignments">
+                <div class="assignment">
+                    <div class="entry"> 
+                        <p>1</p>
                     </div>
-                    <div class="studentAverage">96</div>
-                </section>
-                <ul class="gradesUl">
-                    <p class="gradeEntry">1</p>
                     <section class="assignmentInfo">
-                        <p class="assignmentName">Assignment Name</p>
-                        <p class="assignmentDescription">Assignment Description</p>
-                        <p class="assignmentCategory">Classwork</p>
+                        <div class="assignmentName">
+                            <p>Assignment Name</p>
+                        </div>
+                        <div class="assignmentDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, est illo tempora quibusdam, expedita earum dolore dicta velit laboriosam architecto aperiam inventore provident reprehenderit necessitatibus labore sapiente eos incidunt temporibus?
+                        Delectus in tempore obcaecati mollitia quibusdam iste suscipit eaque! Vel atque sunt reprehenderit, aspernatur aperiam aliquam quaerat, placeat consequuntur sapiente nemo velit mollitia dignissimos blanditiis fuga recusandae veritatis maiores ducimus.</div>
                     </section>
-                </ul>
-                <button class="update">Update</button>
-            </article>
+                    <div class="assignmentGrade">
+                        <p>96</p>
+                    </div>
+                </div>
+            </section>
         </article>
-        <aside class="aside">
-            dsafdsafdsf
-        </aside>
+        <article class="menu">
+            <section>lasdjiflksjdf</section>
+        </article>
     </main>
-</body> 
 </html>
