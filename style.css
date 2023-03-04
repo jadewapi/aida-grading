@@ -9,7 +9,7 @@
 html {
     font-size: 62.5%;
     font-family: 'Poppins', sans-serif;
-    background-color: rgb(181, 181, 181);
+    background-color: rgb(192, 192, 192);
     width: 100%;
     height: 100%;
 }
@@ -204,17 +204,33 @@ main {
 .general {
     height: 20%;
     display: flex;
-    justify-content: space-around;
     color: white;
 }
 
-.category {
+.credentials {
+    width: 20%;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.userName {
+    font-size: 3rem;
+    z-index: 2;
+}
+
+.userPin {
+    font-size: 5rem;
+    z-index: 1;
+    color: black;
+    opacity: 40%;
+    margin-top: -2rem;
 }
 
 .generalName {
     height: 100%;
-    width: 80%;
+    width: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -229,6 +245,7 @@ main {
 }
 
 .generalFirstName {
+    padding: 0 1rem;
     font-size: 7rem;
     width: 90%;
     text-align: center;
@@ -252,7 +269,6 @@ main {
 }
 
 /* general end */
-
 .category {
     width: 100%;
     height: 10%;
@@ -297,6 +313,7 @@ main {
 .assignment {
     display: flex;
     height: 20%;
+    margin-bottom: 2rem;
 }
 
 .entry, .assignmentGrade {
