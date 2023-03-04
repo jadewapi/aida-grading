@@ -217,15 +217,15 @@ main {
 }
 
 .studentName {
-    font-size: 2rem;
+    font-size: 2.5rem;
+    margin-bottom: -4rem;
     z-index: 2;
 }
 
 .userPin {
-    font-size: 5rem;
-    margin-top: -3rem;
+    font-size: 6rem;
     color: black;
-    opacity: 40%;
+    opacity: 50%;
     z-index: 1;
 }
 
@@ -314,6 +314,7 @@ main {
 .assignment {
     display: flex;
     height: 20%;
+    margin-bottom: 2rem;
 }
 
 .entry, .assignmentGrade {
@@ -332,6 +333,7 @@ main {
 
 .entry > p {
     background-color: rgb(255, 255, 255);
+    padding: 0 2.5rem;
 }
 
 .assignmentGrade > p {
