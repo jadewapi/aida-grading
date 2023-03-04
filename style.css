@@ -9,12 +9,9 @@
 html {
     font-size: 62.5%;
     font-family: 'Poppins', sans-serif;
-    background-color: rgb(169, 169, 169);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 100vh;
+    background-color: rgb(181, 181, 181);
+    width: 100%;
+    height: 100%;
 }
 
 button, input {
@@ -25,87 +22,325 @@ button, input {
 }
 
 /* general styling end */
+body {
+    width: 95%;
+    margin: 0 auto;
+}
 
 body {
-    background-color: rgb(244, 76, 76);
-    height: 78rem;
-    width: 97%;
+    padding: 1.5rem 0;
 }
 
-body > *:not(:last-child) {
-    margin-bottom: 2rem;
-}
-
+/* ----------- */
 /* header */
-/* //////////////////////////////////////// */
 header {
     width: 100%;
     height: 9rem;
-    background-color: blueviolet;
+    background: rgb(225, 82, 34);
     display: flex;
+    padding: 1rem 2rem;
+    border-radius: 20px;
 }
 
-/* .logo, .jadeLogoContainer, form */
+img {
+    max-height: 100%;
+    width: auto;
+}
+
+.jadeLogoContainer > img {
+    margin: 0 auto;
+}
+
 header > * {
     height: 100%;
     display: flex;
     align-items: center;
-    height: 100%;
 }
-/* ---------logo-------- */
-.logo {
+
+header > div {
     width: 30%;
 }
 
-logo > img {
-    width: 40%;
-}
-
-.aida {
+header > form {
     width: 60%;
 }
-/* ------------------------ */
 
-.jadeLogoContainer {
-    width: 30%;
+h1 {
+    font-weight: 100;
+    font-size: 5rem;
+    color: white;
+    padding-left: 1rem;
 }
 
-/* -----------form----------- */
 form {
-    width: 40%;
-    height: 100%;
-    background-color: aqua;
-    justify-content: center;
-    gap: 1rem;
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    justify-content: flex-end;
 }
 
 form > * {
-    height: 30%;
+    height: 50%;
 }
 
-input[class="userName"], input[class="pin"] {
-    width: 35%;
+form > input {
+    width: 30%;
+    font-size: 2rem;
+    border-radius: 20px;
 }
 
-.submit {
+input::placeholder {
+    opacity: 60%;
+}
+
+/* hides an input that has a type of submit so the svg acts like the submit button */
+input[type="submit"] { 
+    display: none;
+}
+
+/* ----------- */
+/* aisde */
+aside {
+    width: 100%;
+    height: 7rem;
+    display: flex;
+}
+
+aside > * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.pBorder > p {
+    padding: .5rem 2rem;
+    background-color: white;
+    border-radius: 20px;
+}
+
+/* .pBorder {
+    border-bottom: 10px solid rgb(28, 100, 28);
+} */
+
+aside > div:first-child, 
+aside > div:nth-child(3),
+.students, 
+.menu {
     width: 20%;
 }
-/* ---------------- */
-/* ////////////////////////////////////////// */
-/* end header */
 
-
-/* aside */
-aside {
-    height: 5rem;
-    background-color: rgb(17, 220, 20);
+aside > div:nth-child(2), 
+.interface {
+    width: 60%;
 }
-/* end aside */
+/* -------------- */
 
 
+/* --------------------- */
 /* main */
 main {
-    height: 61rem;
-    background-color: rgb(45, 209, 154);
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    height: 62rem;
 }
-/* end main */
+
+.interface, .menu {
+    border-radius: 20px;
+    background-color: rgb(225, 82, 34);
+}
+
+/* students */
+
+.students {
+    display: block;
+    text-align: center;
+}
+
+.specificStudent {
+    border-radius: 20px;
+    width: 100%;
+    height: 7rem;
+    background-color: rgb(61, 108, 72);
+    padding: 0 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.specificFirstName, .specificLastName {
+    z-index: 2;
+    color: white;
+    width: 90%;
+    overflow-x: scroll;
+}
+
+.specificFirstName {
+    font-size: 3rem;
+    margin-top: -.5rem;
+}
+
+.specificLastName {
+    font-size: 1.5rem;
+    margin-top: -.5rem;
+    border-top: 2px solid white;
+}
+
+.specificAverage {
+    z-index: 1;
+    padding-top: .5rem;
+    position: absolute;
+    font-size: 8rem;
+    opacity: 50%;
+}
+
+/* Interface */
+
+/* general */
+.general {
+    height: 20%;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+
+.category {
+    display: flex;
+}
+
+.generalName {
+    height: 100%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.generalAverage {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.generalFirstName {
+    font-size: 7rem;
+    width: 90%;
+    text-align: center;
+    overflow-x: scroll;
+}
+
+.generalLastName {
+    overflow-x: scroll;
+    font-size: 2rem;
+    margin-top: -2rem;
+    width: 70%;
+    text-align: center;
+}
+
+.generalAverage {
+    font-size: 9rem;
+}
+
+.general {
+    height: 20%;
+}
+
+/* general end */
+
+.category {
+    width: 100%;
+    height: 10%;
+    display: flex;
+}
+
+.category > * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.categoryP > p {
+    padding: .5rem 2rem;
+    background-color: black;
+    color: white;
+}
+
+/* same width for category and assignments */
+
+.category > div:first-child, 
+.category > div:nth-child(3),
+.assignment > div, 
+.assignment > .assignmentGrade {
+    width: 20%;
+}
+
+.category > div:nth-child(2),
+.assignmentInfo {
+    width: 60%;
+}
+
+
+/* assignments */
+.allAssignments {
+    height: 70%;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+.assignment {
+    display: flex;
+    height: 20%;
+}
+
+.entry, .assignmentGrade {
+    height: 100%;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.entry > p, .assignmentGrade > p {
+    background-color: white;
+    padding: .5rem 1.5rem;
+    font-size: 4rem;
+}
+
+.entry > p {
+    background-color: rgb(255, 255, 255);
+}
+
+.assignmentGrade > p {
+    background-color: rgb(61, 108, 72);
+    color: white;
+}
+
+.assignmentInfo {
+    background-color: white;
+}
+
+.assignmentName {
+    height: 35%;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.assignmentName > p {
+    width: 90%;
+    margin: 0 auto;
+    overflow-x: scroll;
+}
+
+.assignmentDescription {
+    background-color: rgb(195, 195, 195);
+    padding: .5rem;
+    height: 65%;
+    overflow-y: scroll;
+}
