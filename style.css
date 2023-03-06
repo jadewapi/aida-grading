@@ -27,6 +27,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    padding: 0 1rem;
 }
 
 
@@ -149,7 +151,15 @@ main {
     display: flex;
     gap: 2rem;
     height: 62rem;
+    scale: 0;
+    transition: scale 0.5 ease;
 }
+
+
+.main.animate {
+    scale: 1;
+}
+
 
 .interface, .menu {
     border-radius: 20px;
@@ -230,7 +240,7 @@ main {
 .userPin {
     font-size: 6rem;
     color: black;
-    opacity: 50%;
+    opacity: 40%;
     z-index: 1;
 }
 
@@ -241,6 +251,7 @@ main {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    border-bottom: 4px solid white;
 }
 
 .generalAverage {
