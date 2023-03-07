@@ -1,9 +1,5 @@
 'use strict';
+<<<<<<< HEAD
+=======
 
-
-const main = document.querySelector('.main');
-const userName = document.querySelector('.userName');
-
-userName.addEventListener('click', function(){
-    main.classList.add('animate');
-})
+>>>>>>> parent of 429d571 (added javascript for animation testing)

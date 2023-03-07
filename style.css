@@ -9,7 +9,7 @@
 html {
     font-size: 62.5%;
     font-family: 'Poppins', sans-serif;
-    background-color: rgb(161, 161, 161);
+    background-color: rgb(181, 181, 181);
     width: 100%;
     height: 100%;
 }
@@ -23,29 +23,23 @@ button, input {
 
 /* general styling end */
 body {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 0 1rem;
+    width: 95%;
+    margin: 0 auto;
 }
 
-
-header, main {
-    max-width: 1368px;
-    margin: 0 auto;
+body {
+    padding: 1.5rem 0;
 }
 
 /* ----------- */
 /* header */
+
 header {
     width: 100%;
     height: 9rem;
-    background: rgb(255, 85, 0);
+    background: rgb(14, 133, 180);
     display: flex;
     padding: 1rem 2rem;
-    margin-top: 1rem;
     border-radius: 20px;
 }
 
@@ -152,18 +146,22 @@ main {
     gap: 2rem;
     height: 62rem;
     scale: 0;
-    transition: scale 150ms ease-in;
+    transition: scale 0.5 ease;
+<<<<<<< HEAD
+    background-color: rgb(255, 85, 0);
+=======
 }
 
 
 .main.animate {
     scale: 1;
+>>>>>>> parent of 429d571 (added javascript for animation testing)
 }
 
 
 .interface, .menu {
     border-radius: 20px;
-    background-color: rgb(255, 85, 0);
+    background-color: rgb(225, 82, 34);
 }
 
 /* students */
@@ -240,7 +238,7 @@ main {
 .userPin {
     font-size: 6rem;
     color: black;
-    opacity: 40%;
+    opacity: 50%;
     z-index: 1;
 }
 
@@ -251,7 +249,6 @@ main {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border-bottom: 4px solid white;
 }
 
 .generalAverage {
