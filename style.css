@@ -152,11 +152,11 @@ main {
     gap: 2rem;
     height: 62rem;
     scale: 0;
-    transition: scale 0.5 ease;
+    transition: scale 150ms ease-in;
 }
 
 
-.animate {
+.main.animate {
     scale: 1;
 }
 

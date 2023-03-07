@@ -1,10 +1,9 @@
 'use strict';
 
-const main = document.querySelector('main');
-const button = document.querySelector('.ass');
 
+const main = document.querySelector('.main');
+const userName = document.querySelector('.userName');
 
-button.addEventListener('click', function(){
+userName.addEventListener('click', function(){
     main.classList.add('animate');
-});
-
+})
