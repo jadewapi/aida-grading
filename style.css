@@ -432,6 +432,12 @@ main {
     width: 70%;
 }
 
+.studentMenu > div > * {
+    width: 95%;
+    overflow-x: scroll;
+}
+
+
 
 .studentMenu > div > p:first-child {
     font-size: 2.5rem;

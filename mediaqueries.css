@@ -1,1 +1,171 @@
-@media
+/* @media scree1373 */
+
+/* ---------------- */
+/* general average */
+/* --------------- */
+@media screen and (max-width: 1373px) {
+    .generalAverage {
+        font-size: 8rem;
+    }
+}
+
+@media screen and (max-width: 1247px) {
+    .generalAverage {
+        font-size: 7rem;
+    }
+    /* assignment grade letter and >p and entry > p*/
+    .assignmentGradeLetter {
+        font-size: 1.7rem;
+        left: 50%;
+    }
+    .entry > p, .assignmentGrade > p {
+        font-size: 3.7rem;
+    }
+}
+
+@media screen and (max-width: 1143px) {
+    .generalAverage {
+        font-size: 7rem;
+    }
+    /* general first name and general last name */
+    .generalFirstName {
+        font-size: 6rem;
+    }
+    .generalLastName {
+        font-size: 1.7rem;
+    }
+}
+
+@media screen and (max-width: 1252px) {
+    .entry > p {
+        font-size: 3.7rem;
+        padding: .5rem 1rem;
+    }
+}
+
+
+/* ------------------ */
+/* menu top entry num */
+/* ------------------- */
+@media screen and (max-width: 1304px) {
+    .menuTopEntryNum > p {
+        font-size: 12rem;
+        top: -35%
+    };
+}
+
+@media screen and (max-width: 1304px) {
+    .menuTopEntryNum > p {
+        font-size: 12rem;
+        top: -35%
+    };
+}
+
+@media screen and (max-width: 1117px) {
+    .menuTopEntryNum > p {
+        font-size: 11rem;
+        top: -30%
+    };
+}
+
+@media screen and (max-width: 1047px) {
+    .menuTopEntryNum > p {
+        font-size: 10rem;
+        top: -25%
+    };
+}
+
+@media screen and (max-width: 939px) {
+    .menuTopEntryNum > p {
+        font-size: 9rem;
+        top: -20%
+    };
+}
+
+/* --------- */
+/* menu middle */
+/* ---------- */
+@media screen and (max-width: 1217px) {
+    .menuMiddle {
+        font-size: 1.7rem
+    };
+    /* general average */
+    .generalAverage {
+        font-size: 5rem;
+    }
+}
+
+@media screen and (max-width: 1057px) {
+    .menuMiddle {
+        font-size: 1.4rem
+    };
+}
+
+@media screen and (max-width: 894px) {
+    .menuMiddle {
+        text-align: center;
+    };
+}
+
+
+/* ------------ */
+/* update grades */
+/* ------------- */
+@media screen and (max-width: 1071px) {
+    .update > button {
+        font-size: 1.7rem
+    };
+}
+
+
+/* ------------ */
+/* menu top entry */
+/* --------------- */
+@media screen and (max-width: 1955px) {
+    .menuTopEntry > p:first-child {
+        font-size: 4rem
+    };
+}
+
+
+/* ------------------------------------- */
+/* credentials > userPin */
+/* -------------------------------------- */
+@media screen and (max-width: 1033px) {
+    .userPin {
+        font-size: 5rem
+    };
+}
+
+/* --------------- */
+/* category P */
+/* --------------- */
+@media screen and (max-width: 1076px) {
+    .categoryP {
+        font-size: 1.7rem
+    };
+}
+
+@media screen and (max-width: 986px) {
+    .categoryP {
+        font-size: 1.4rem
+    };
+    .assignmentGrade > p {
+        padding: 0;
+}
+
+
+/* ------------ */
+/* grade input */
+/* ------------*/
+@media screen and (max-width: 1137px) {
+    .gradeInput {
+        font-size: 2.5rem;
+    };
+}
+
+@media screen and (max-width: 1013px) {
+    .gradeInput {
+        font-size: 2rem;
+    };
+}
