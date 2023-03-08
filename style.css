@@ -378,7 +378,7 @@ main {
 
 /* menu */
 
-.menuTop, .menuMiddle > p {
+.menuTop, .menuMiddle > p, .studentsList {
     padding: 1rem;
 }
 
@@ -428,3 +428,49 @@ main {
     align-items: center;
 }
 
+
+.studentsList {
+    height: 60%;
+    padding: 1rem;
+    overflow-y: scroll;
+}
+
+.studentMenu {
+    display: flex;
+    color: black;
+}
+
+.studentMenu > div {
+    font-size: 1.2rem;
+    width: 70%;
+}
+
+
+.studentMenu > div > p:first-child {
+    font-size: 2.5rem;
+    margin-bottom: -1rem;
+}
+
+.studentMenu > p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 2px solid black;
+    font-size: 3rem;
+    width: 30%;
+}
+
+.update {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+}
+
+.update > button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    font-size: 2rem;
+}
