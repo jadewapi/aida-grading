@@ -1,9 +1,17 @@
-/* general styling */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     list-style: none;
+}
+
+
+:root {
+    /* Letter Grades */
+    --goodGrade: rgb(61, 108, 72); /*100-85 */
+    --okGrade: rgb(255, 255, 32); /*84-75 */
+    --badGrade: rgb(189, 0, 0); /*75-60> */
+
 }
 
 html {
@@ -21,7 +29,6 @@ button, input {
     text-align: center;
 }
 
-/* general styling end */
 body {
     width: 95%;
     margin: 0 auto;
@@ -30,9 +37,6 @@ body {
 body {
     padding: 1.5rem 0;
 }
-
-/* ----------- */
-/* header */
 
 header {
     width: 100%;
@@ -94,13 +98,10 @@ input::placeholder {
     opacity: 60%;
 }
 
-/* hides an input that has a type of submit so the svg acts like the submit button */
 input[type="submit"] { 
     display: none;
 }
 
-/* ----------- */
-/* aisde */
 aside {
     width: 100%;
     height: 7rem;
@@ -131,10 +132,7 @@ aside > div:nth-child(2),
 .interface {
     width: 60%;
 }
-/* -------------- */
 
-/* --------------------- */
-/* main */
 main {
     width: 100%;
     display: flex;
@@ -146,8 +144,6 @@ main {
     background-color: rgb(255, 85, 0);
     border-radius: 20px;
 }
-
-/* students */
 
 .students {
     display: block;
@@ -194,9 +190,6 @@ main {
     opacity: 50%;
 }
 
-/* Interface */
-
-/* general */
 .general {
     height: 20%;
     display: flex;
@@ -265,8 +258,6 @@ main {
     height: 20%;
 }
 
-/* general end */
-
 .category {
     width: 100%;
     height: 10%;
@@ -286,8 +277,6 @@ main {
     color: white;
 }
 
-/* same width for category and assignments */
-
 .category > div:first-child, 
 .category > div:nth-child(3),
 .assignment > div, 
@@ -300,8 +289,6 @@ main {
     width: 60%;
 }
 
-
-/* assignments */
 .allAssignments {
     padding-top: 1rem;
     height: 70%;
@@ -376,8 +363,6 @@ main {
     overflow-y: scroll;
 }
 
-/* menu */
-
 .menuTop, .menuMiddle > p, .studentsList {
     padding: 1rem;
 }
@@ -438,6 +423,8 @@ main {
 .studentMenu {
     display: flex;
     color: black;
+    margin-bottom: 1rem;
+    border-bottom: 4px solid black
 }
 
 .studentMenu > div {
@@ -451,11 +438,11 @@ main {
     margin-bottom: -1rem;
 }
 
-.studentMenu > p {
+.gradeInput {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-left: 2px solid black;
+    border-left: 6px solid black;
     font-size: 3rem;
     width: 30%;
 }
@@ -471,6 +458,6 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1em;
+    padding: .25em .5em;
     font-size: 2rem;
 }
