@@ -221,7 +221,7 @@ main {
 .userPin {
     font-size: 6rem;
     color: black;
-    opacity: 40%;
+    opacity: 30%;
     z-index: 1;
 }
 
@@ -377,3 +377,54 @@ main {
 }
 
 /* menu */
+
+.menuTop, .menuMiddle > p {
+    padding: 1rem;
+}
+
+.menuTop {
+    height: 20%;
+    display: flex;   
+    color: white;
+}
+
+.menuTopEntry {
+    width: 60%;
+    z-index: 2;
+}
+
+.menuTopEntry > p:first-child {
+    font-size: 5rem;
+    margin-bottom: -1.5rem;
+}
+
+.menuTopEntry > p:nth-child(2) {
+    font-size: 1.2rem;
+}
+
+.menuTopEntryNum {
+    width: 40%;
+    position: relative;
+}
+
+.menuTopEntryNum > p{
+    position: absolute;
+    top: -47%;
+    right: -5%;
+    font-size: 14rem;
+    color: black;
+    opacity: 30%;
+    z-index: 1;
+}
+
+.menuMiddle {
+    height: 10%;
+    background-color: black;
+    color: white;
+    overflow-y: scroll;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
