@@ -1,5 +1,5 @@
 'use strict';
 
-if (window.matchMedia("(max-width: 768px)").matches) {
-	window.location.href = "mobile.html";
+if (window.matchMedia("(max-width: 886px)").matches) {
+	window.location.href = "886width.html";
 }
