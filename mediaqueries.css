@@ -1,171 +1,127 @@
-/* @media scree1373 */
+@media screen and (max-width: 1246px) {
+    .menuTopEntryNum > p {
+        top: -42%;
+        right: -5%;
+        font-size: 13rem;
+    }
+}
 
-/* ---------------- */
-/* general average */
-/* --------------- */
-@media screen and (max-width: 1373px) {
+@media screen and (max-width: 1185px) {
+    .menuMiddle {
+        font-size: 1.7rem
+    }
+}
+
+@media screen and (max-width: 1170px) {
+    .menuTopEntryNum > p {
+        top: -36%;
+        right: -5%;
+        font-size: 12rem;
+    }
+}
+
+@media screen and (max-width: 1170px) {
+    .menuTopEntryNum > p {
+        top: -30%;
+        right: -5%;
+        font-size: 11rem;
+    }
     .generalAverage {
         font-size: 8rem;
     }
-}
-
-@media screen and (max-width: 1247px) {
-    .generalAverage {
-        font-size: 7rem;
-    }
-    /* assignment grade letter and >p and entry > p*/
-    .assignmentGradeLetter {
+    .category > * {
         font-size: 1.7rem;
-        left: 50%;
     }
     .entry > p, .assignmentGrade > p {
-        font-size: 3.7rem;
+        font-size: 3.5rem;
     }
 }
 
-@media screen and (max-width: 1143px) {
+@media screen and (max-width: 1110px) {
+    .gradeInput {
+        font-size: 2.7rem;
+    }
+}
+
+@media screen and (max-width: 1033px) {
+    .update > button {
+        font-size: 1.8rem;
+    }
+    .menuMiddle {
+        font-size: 1.5rem;
+    }
+    .generalAverage {
+        font-size: 7.7rem;
+    }
+    .menuTopEntryNum > p {
+        top: -27%;
+        right: -5%;
+        font-size: 10.5rem;
+    }
+    .userPin {
+        font-size: 5.4rem;
+    }    
+    .menuTopEntry > p:first-child {
+        font-size: 4.5rem;
+    }
+    .gradeInput {
+        font-size: 2.3rem;
+    }
+}
+
+@media screen and (max-width: 964px) {
+    .menuTopEntryNum > p {
+        top: -24%;
+        right: -8%;
+        font-size: 10rem;
+    }
+    .menuTopEntry > p:first-child {
+        font-size: 4rem;
+    }
     .generalAverage {
         font-size: 7rem;
     }
-    /* general first name and general last name */
-    .generalFirstName {
-        font-size: 6rem;
+    .assignmentGradeLetter {
+        font-size: 1.5rem;
+        left: 50%;
     }
-    .generalLastName {
-        font-size: 1.7rem;
-    }
-}
-
-@media screen and (max-width: 1252px) {
-    .entry > p {
-        font-size: 3.7rem;
-        padding: .5rem 1rem;
-    }
-}
-
-
-/* ------------------ */
-/* menu top entry num */
-/* ------------------- */
-@media screen and (max-width: 1304px) {
-    .menuTopEntryNum > p {
-        font-size: 12rem;
-        top: -35%
-    };
-}
-
-@media screen and (max-width: 1304px) {
-    .menuTopEntryNum > p {
-        font-size: 12rem;
-        top: -35%
-    };
-}
-
-@media screen and (max-width: 1117px) {
-    .menuTopEntryNum > p {
-        font-size: 11rem;
-        top: -30%
-    };
-}
-
-@media screen and (max-width: 1047px) {
-    .menuTopEntryNum > p {
-        font-size: 10rem;
-        top: -25%
-    };
-}
-
-@media screen and (max-width: 939px) {
-    .menuTopEntryNum > p {
-        font-size: 9rem;
-        top: -20%
-    };
-}
-
-/* --------- */
-/* menu middle */
-/* ---------- */
-@media screen and (max-width: 1217px) {
-    .menuMiddle {
-        font-size: 1.7rem
-    };
-    /* general average */
-    .generalAverage {
+    .userPin {
         font-size: 5rem;
     }
 }
 
-@media screen and (max-width: 1057px) {
-    .menuMiddle {
-        font-size: 1.4rem
-    };
+@media screen and (max-width: 964px) {
+    .menuTopEntry > p:first-child {
+        font-size: 3.5rem;
+    }
+    .update > button {
+        font-size: 1.6rem;
+    }
 }
 
-@media screen and (max-width: 894px) {
+@media screen and (max-width: 931px) {
     .menuMiddle {
         text-align: center;
-    };
+    }
+    .menuTopEntryNum > p {
+        top: -24%;
+        right: -15%;
+        font-size: 10rem;
+    }
 }
 
 
-/* ------------ */
-/* update grades */
-/* ------------- */
-@media screen and (max-width: 1071px) {
-    .update > button {
-        font-size: 1.7rem
-    };
+@media screen and (max-width: 895px) {
+    .menuTopEntryNum > p {
+        top: -16%;
+        right: -14%;
+        font-size: 9rem;
+    }
+    .generalFirstName {
+        font-size: 6rem;
+    }
 }
 
+@media screen and (max-width: 886px) {
 
-/* ------------ */
-/* menu top entry */
-/* --------------- */
-@media screen and (max-width: 1955px) {
-    .menuTopEntry > p:first-child {
-        font-size: 4rem
-    };
-}
-
-
-/* ------------------------------------- */
-/* credentials > userPin */
-/* -------------------------------------- */
-@media screen and (max-width: 1033px) {
-    .userPin {
-        font-size: 5rem
-    };
-}
-
-/* --------------- */
-/* category P */
-/* --------------- */
-@media screen and (max-width: 1076px) {
-    .categoryP {
-        font-size: 1.7rem
-    };
-}
-
-@media screen and (max-width: 986px) {
-    .categoryP {
-        font-size: 1.4rem
-    };
-    .assignmentGrade > p {
-        padding: 0;
-}
-
-
-/* ------------ */
-/* grade input */
-/* ------------*/
-@media screen and (max-width: 1137px) {
-    .gradeInput {
-        font-size: 2.5rem;
-    };
-}
-
-@media screen and (max-width: 1013px) {
-    .gradeInput {
-        font-size: 2rem;
-    };
 }

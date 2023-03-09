@@ -30,12 +30,11 @@ button, input {
 }
 
 body {
-    width: 95%;
+    max-width: 1368px;
+    /* width: 95%; */
+    /* 95% of 1440 (my viewport width on my device) */
     margin: 0 auto;
-}
-
-body {
-    padding: 1.5rem 0;
+    padding: 1.5rem;
 }
 
 header {
@@ -229,6 +228,7 @@ main {
 }
 
 .generalAverage {
+    font-size: 9rem;
     width: 20%;
     display: flex;
     justify-content: center;
@@ -245,13 +245,9 @@ main {
 .generalLastName {
     overflow-x: scroll;
     font-size: 2rem;
-    margin-top: -2rem;
+    margin-top: -2.5rem;
     width: 70%;
     text-align: center;
-}
-
-.generalAverage {
-    font-size: 9rem;
 }
 
 .general {
@@ -272,7 +268,7 @@ main {
 }
 
 .categoryP > p {
-    padding: .5rem 2rem;
+    padding: .5em 1em;
     background-color: black;
     color: white;
 }
@@ -326,13 +322,8 @@ main {
 
 .entry > p, .assignmentGrade > p {
     background-color: white;
-    padding: .5rem 1.5rem;
+    padding: .25em .25em;
     font-size: 4rem;
-}
-
-.entry > p {
-    background-color: rgb(255, 255, 255);
-    padding: 0 2.5rem;
 }
 
 .assignmentGrade > p {
