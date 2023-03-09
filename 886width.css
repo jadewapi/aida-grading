@@ -1,0 +1,460 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+
+:root {
+    /* Letter Grades */
+    --goodGrade: rgb(61, 108, 72); /*100-85 */
+    --okGrade: rgb(255, 255, 32); /*84-75 */
+    --badGrade: rgb(189, 0, 0); /*75-60> */
+
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(181, 181, 181);
+    width: 100%;
+    height: 100%;
+}
+
+button, input {
+    border: none;
+    outline: none;
+    font-family: inherit;
+    text-align: center;
+}
+
+body {
+    max-width: 1368px;
+    /* width: 95%; */
+    /* 95% of 1440 (my viewport width on my device) */
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+header {
+    width: 100%;
+    height: 9rem;
+    background-color: rgb(255, 85, 0);
+    display: flex;
+    padding: 1rem 2rem;
+    border-radius: 20px;
+}
+
+img {
+    max-height: 100%;
+    width: auto;
+}
+
+.jadeLogoContainer > img {
+    margin: 0 auto;
+}
+
+header > * {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+header > div {
+    width: 30%;
+}
+
+header > form {
+    width: 60%;
+}
+
+h1 {
+    font-weight: 100;
+    font-size: 5rem;
+    color: white;
+    padding-left: 1rem;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    justify-content: flex-end;
+}
+
+form > * {
+    height: 50%;
+}
+
+form > input {
+    width: 30%;
+    font-size: 2rem;
+    border-radius: 20px;
+}
+
+input::placeholder {
+    opacity: 60%;
+}
+
+input[type="submit"] { 
+    display: none;
+}
+
+aside {
+    width: 100%;
+    height: 7rem;
+    display: flex;
+}
+
+aside > * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.pBorder > p {
+    padding: .5rem 2rem;
+    background-color: white;
+    border-radius: 20px;
+}
+
+aside > div:first-child, 
+aside > div:nth-child(3),
+.students, 
+.menu {
+    width: 20%;
+}
+
+aside > div:nth-child(2), 
+.interface {
+    width: 60%;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    height: 62rem;
+}
+
+.interface, .menu {
+    background-color: rgb(255, 85, 0);
+    border-radius: 20px;
+}
+
+.students {
+    display: block;
+    text-align: center;
+}
+
+.specificStudent {
+    border-radius: 20px;
+    width: 100%;
+    height: 7rem;
+    background-color: rgb(61, 108, 72);
+    padding: 0 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.specificFirstName, .specificLastName {
+    z-index: 2;
+    color: white;
+    width: 90%;
+    overflow-x: scroll;
+}
+
+.specificFirstName {
+    font-size: 3rem;
+    margin-top: -.5rem;
+}
+
+.specificLastName {
+    font-size: 1.5rem;
+    margin-top: -.5rem;
+    border-top: 2px solid white;
+}
+
+.specificAverage {
+    z-index: 1;
+    padding-top: .5rem;
+    position: absolute;
+    font-size: 8rem;
+    opacity: 50%;
+}
+
+.general {
+    height: 20%;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+
+.credentials {
+    width : 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.studentName {
+    font-size: 2.5rem;
+    margin-bottom: -4rem;
+    z-index: 2;
+}
+
+.userPin {
+    font-size: 6rem;
+    color: black;
+    opacity: 30%;
+    z-index: 1;
+}
+
+.generalName {
+    height: 100%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 4px solid white;
+}
+
+.generalAverage {
+    font-size: 9rem;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.generalFirstName {
+    font-size: 7rem;
+    width: 90%;
+    text-align: center;
+    overflow-x: scroll;
+}
+
+.generalLastName {
+    overflow-x: scroll;
+    font-size: 2rem;
+    margin-top: -2.5rem;
+    width: 70%;
+    text-align: center;
+}
+
+.general {
+    height: 20%;
+}
+
+.category {
+    width: 100%;
+    height: 10%;
+    display: flex;
+}
+
+.category > * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.categoryP > p {
+    padding: .5em 1em;
+    background-color: black;
+    color: white;
+}
+
+.category > div:first-child, 
+.category > div:nth-child(3),
+.assignment > div, 
+.assignment > .assignmentGrade {
+    width: 20%;
+}
+
+.category > div:nth-child(2),
+.assignmentInfo {
+    width: 60%;
+}
+
+.allAssignments {
+    padding-top: 1rem;
+    height: 70%;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+.assignment {
+    display: flex;
+    height: 20%;
+    margin-bottom: 2rem;
+}
+
+.assignmentGrade {
+    position: relative;
+}
+
+.assignmentGradeLetter {
+    position: absolute;
+    left: 25%;
+    top: 10%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    background-color: yellow;
+    padding: 0 .5rem;
+}
+
+.entry, .assignmentGrade {
+    height: 100%;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.entry > p, .assignmentGrade > p {
+    background-color: white;
+    padding: .25em .25em;
+    font-size: 4rem;
+}
+
+.assignmentGrade > p {
+    background-color: rgb(61, 108, 72);
+    color: white;
+}
+
+.assignmentInfo {
+    background-color: white;
+}
+
+.assignmentName {
+    height: 35%;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.assignmentName > p {
+    width: 90%;
+    margin: 0 auto;
+    overflow-x: scroll;
+}
+
+.assignmentDescription {
+    background-color: rgb(195, 195, 195);
+    padding: .5rem;
+    height: 65%;
+    overflow-y: scroll;
+}
+
+.menuTop, .menuMiddle > p, .studentsList {
+    padding: 1rem;
+}
+
+.menuTop {
+    height: 20%;
+    display: flex;   
+    color: white;
+}
+
+.menuTopEntry {
+    width: 60%;
+    z-index: 2;
+}
+
+.menuTopEntry > p:first-child {
+    font-size: 5rem;
+    margin-bottom: -1.5rem;
+}
+
+.menuTopEntry > p:nth-child(2) {
+    font-size: 1.2rem;
+}
+
+.menuTopEntryNum {
+    width: 40%;
+    position: relative;
+}
+
+.menuTopEntryNum > p{
+    position: absolute;
+    top: -47%;
+    right: -5%;
+    font-size: 14rem;
+    color: black;
+    opacity: 30%;
+    z-index: 1;
+}
+
+.menuMiddle {
+    height: 10%;
+    background-color: black;
+    color: white;
+    overflow-y: scroll;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.studentsList {
+    height: 60%;
+    padding: 1rem;
+    overflow-y: scroll;
+}
+
+.studentMenu {
+    display: flex;
+    color: black;
+    margin-bottom: 1rem;
+    border-bottom: 4px solid black
+}
+
+.studentMenu > div {
+    font-size: 1.2rem;
+    width: 70%;
+}
+
+.studentMenu > div > * {
+    width: 95%;
+    overflow-x: scroll;
+}
+
+
+
+.studentMenu > div > p:first-child {
+    font-size: 2.5rem;
+    margin-bottom: -1rem;
+}
+
+.gradeInput {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 6px solid black;
+    font-size: 3rem;
+    width: 30%;
+}
+
+.update {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+}
+
+.update > button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .25em .5em;
+    font-size: 2rem;
+}
