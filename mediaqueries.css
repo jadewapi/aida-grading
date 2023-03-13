@@ -1,3 +1,14 @@
+@media screen and (min-height: 821px) {
+    body {
+        margin: 0;
+    }
+    html {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
 @media screen and (max-width: 1246px) {
     .menuTopEntryNum > p {
         top: -42%;
@@ -111,17 +122,110 @@
 }
 
 
-@media screen and (max-width: 895px) {
-    .menuTopEntryNum > p {
-        top: -16%;
-        right: -14%;
-        font-size: 9rem;
+/* -------------- */
+/* Change in UI */
+/* ------------ */
+@media screen and (max-width: 898px) {
+    .students, .pBorder:first-child {
+        display: none;
     }
-    .generalFirstName {
+    .interface, .pBorder:nth-child(2){
+        width: 70%;
+    }
+    .menu, .pBorder:nth-child(3) {
+        width: 30%;
+    }
+    .menuTopEntryNum > p {
+            top: -47%;
+            right: -5%;
+            font-size: 14rem;
+    }
+    .menuTopEntry > p:first-child {
+        font-size: 5rem;
+        margin-bottom: -1.5rem;
+    }
+    .menuMiddle {
+        font-size: 2rem
+    }
+    .update > button {
+        font-size: 2rem;
+    }
+    aside {
+        gap: 2rem;
+    }
+    .generalAverage {
+        font-size: 8rem;
+    }
+    .userPin {
         font-size: 6rem;
+    }
+    .gradeInput {
+        font-size: 3rem;
+    }
+    .category > * {
+        font-size: 1.9rem;
     }
 }
 
-@media screen and (max-width: 886px) {
+@media screen and (max-width: 834px) {
+    form > input {
+        font-size: 1.5rem;
+    }
+    .generalAverage {
+        font-size: 7.5rem;
+    }
+    .category > * {
+        font-size: 1.6rem;
+    }
+    .menuTopEntryNum > p {
+        top: -42%;
+        right: -5%;
+        font-size: 13rem;
+    }
+    .userPin {
+        font-size: 5rem;
+    }
+    .studentName {
+        margin-bottom: -3rem;
+    }
+    .menuMiddle {
+        font-size: 1.7rem;
+    }
+}
 
+@media screen and (max-width: 834px) {
+    .gradeInput {
+        font-size: 2.7rem;
+    }
+    .menuTopEntryNum > p {
+        top: -37%;
+        right: -5%;
+        font-size: 12.5rem;
+    }
+    .menuTopEntry > p:first-child {
+        font-size: 4.5rem;
+    }
+    .generalFirstName {
+        font-size: 6.5rem;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .menuTopEntryNum > p {
+        top: -33%;
+        right: -5%;
+        font-size: 12rem;
+    }
+    .menuTopEntry > p:first-child {
+        font-size: 3.7rem;
+    }
+    .generalAverage {
+        font-size: 6rem;
+    }
+    .userPin {
+        font-size: 4.5rem;
+    }
+    .studentName {
+        margin-bottom: -3rem;
+    }
 }
