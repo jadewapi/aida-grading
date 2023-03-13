@@ -1,4 +1,4 @@
-@media screen and (min-height: 821px) {
+@media screen and (min-height: 822px) {
     body {
         margin: 0;
     }
@@ -126,6 +126,22 @@
 /* Change in UI */
 /* ------------ */
 @media screen and (max-width: 898px) {
+    body {
+        padding: 0rem;
+    }
+    header {
+        border-radius: 0px;
+    }
+    aside, main {
+        padding: 0 1.5rem;
+    }
+    .pBorder:nth-child(3) > p:nth-child(2){
+        display: unset;
+    }
+    .pBorder:nth-child(3) {
+        display: flex;
+        justify-content: space-between;
+    }
     .students, .pBorder:first-child {
         display: none;
     }
@@ -191,6 +207,9 @@
     .menuMiddle {
         font-size: 1.7rem;
     }
+    .pBorder:nth-child(3) {
+        font-size: 1.8rem;
+    }
 }
 
 @media screen and (max-width: 834px) {
@@ -210,6 +229,11 @@
     }
 }
 
+@media screen and (max-width: 800px){
+    .pBorder:nth-child(3) {
+        font-size: 1.6rem;
+    }
+
 @media screen and (max-width: 750px) {
     .menuTopEntryNum > p {
         top: -33%;
@@ -227,5 +251,20 @@
     }
     .studentName {
         margin-bottom: -3rem;
+    }
+}
+
+@media screen and (max-width: 724px) {
+    aside {
+        display: none;
+    }
+    main {
+        flex-direction: column;
+        height: fit-content;
+    }
+    .interface {
+        height: 62rem;
+        width: 100%;
+        margin-top: 2rem;
     }
 }
